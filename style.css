@@ -1,0 +1,77 @@
+body {
+  margin: 50px;   
+  background-color: blue; 
+  font-family: Lobster;
+}
+
+.nav {
+  padding-right: 50px;
+}
+
+.navbar-brand {
+  padding-left: 370px;
+}
+
+.about-me {
+  margin-top: 10px;
+  background-color: rgba(121, 141, 173, 0.5);
+  padding: 50px;
+  font-size: 25px;
+}
+
+.technologies {
+  list-style-type: none;
+}
+
+#avatar-pic {
+  width: 250px;
+  border-radius: 50%;
+}
+
+.important {
+  color: rgba(255, 0, 0, 0.5);
+}
+
+.portfolio {
+  height: 500px;
+  background-color: rgba(121, 141, 173, 0.5);
+}
+
+.certs {
+  width: 700px;
+  padding-left: 400px; 
+}
+
+.projects {
+  font-size: 15px;
+}
+
+a:hover {
+  color: black;
+}
+
+footer {
+  background-color: grey;
+}
+
+.contact-me {
+  height: 150px;
+  background-color: rgba(121, 141, 173, 0.5);
+  
+}
+
+#send-email {
+  display: block;
+  padding: 10px 0px 0px 530px
+}
+
+#contact-buttons {
+  padding: 10px 0px 10px 350px;
+}
+footer a {
+  float: right; 
+}
+
+.certificates {
+  background-color: rgba(121, 141, 173, 0.5);
+}
