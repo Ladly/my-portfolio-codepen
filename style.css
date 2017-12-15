@@ -4,6 +4,10 @@ body {
   font-family: Lobster;
 }
 
+span {
+  color: red
+}
+
 .nav {
   padding-right: 50px;
 }

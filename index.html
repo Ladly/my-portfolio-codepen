@@ -11,20 +11,21 @@
 
 </head>
 <body>
-	<!--Navigation -->
+<!--Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-header">
     <a class="navbar-brand" href="#">Vuk Ivanovic</a>
   </div>
   <ul class="nav navbar-nav navbar-right">
-    <li class="active" id="about"><a href="#">About</a></li>
-    <li><a href="#" id="portf">Portfolio</a></li>
-    <li><a href="#" id="certif">Certificates</a></li>
-    <li><a href="#" id="contact">Contact Me</a></li>
+    <li><a href="#" onclick="return false;" onmousedown="resetScroller('about-me')">About</a></li>
+    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('portfolio'); resetScroller('portfolio')">Portfolio</a></li>
+    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('certificates')">Certificates</a></li>
+    <li><a href="#" onclick="return false;" onmousedown="autoScrollTo('contact-me')">Contact Me</a></li>
   </ul>
 </nav>
 <!--About -->
-<div class="container about-me">
+
+<div class="container about-me" id='about-me'>
   <div class="row">
     <div class="col-md-8 text-center">
       <p>Front-end developer with full stack aspiration. Like to call myself full stack enthusiast. Skilled with <span class="important">HTML5, CSS3, Javascript, Git</span></p>
@@ -48,28 +49,25 @@
 
 <!-- Projects/ portfolio-->
 <div class="container portfolio">
-  <div class="row"></div>
-  <h3>Projects I participated on:</h3>
-  <div class="col-md-6">
-    <ul>
-      <li class="projects"><a href="https://www.ucimo.tech/" target="_blank">ucimo.tech Landing page</a> <a href="#">(description)</a></li>
-      <li class="projects"><a href="https://app.ucimo.tech/login" target="_blank"> ucimo.tech App</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/Zyqjdm" target="_blank">Nole tribut page</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/GEwJgG" target="_blank">My portfolio</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/dzYPQy" target="_blank">Random quote machine</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/WEGqQj" target="_blank">Weather App</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/xLqbpx" target="_blank">Wikipedia Viewer</a><a href="#">(description)</a></li>
-      <li class="projects"><a href="https://codepen.io/Ladly/pen/QMBpEd" target="_blank">Twitch Streamers</a><a href="#">(description)</a></li>
+  <div class="col-md-6" id='projects'>
+    <h2>Projects:</h2>
+    <ul id="basic">
+    </ul>
+    <h2>Refactored:</h2>
+    <ul id="refactored">
     </ul>
   </div>
   <div class="col-md-6">
+    <h3>Job description:</h3>
     <div class="well" id="job-description">
-      <p>job description (will be added later)</p>
+      
     </div>
   </div>
+
 </div>
+
 <!-- Certificates -->
-<div class="container certificates">
+<div class="container certificates" id="certificates">
   <hr />
   <h2>Certificates</h2>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -112,20 +110,20 @@
 </div>
 
 <!-- Contact me -->
-<div class="container contact-me">
+<div class="container contact-me" id="contact-me">
   <h3 class="text-center">Contact me</h3>
   <div id="contact-buttons">
     <a href="https://www.facebook.com/" target="_blank"><button class="btn btn-primary">Facebook</button></a>
     <a href="https://www.instagram.com/" target="_blank"><button class="btn btn-primary">Instagram</button></a>
     <a href="https://github.com/" target="_blank"><button class="btn btn-primary">GitHub</button></a>
-    <a href="https://www.freecodecamp.org/ladly" target="_blank"><button class="btn btn-primary">FreeCodeCamp</button></a>   
-    <a href="https://bitbucket.org/dashboard/repositories" target="_blank"><button class="btn btn-primary">BitBucket</button></a>    
-  </div>  
+    <a href="https://www.freecodecamp.org/ladly" target="_blank"><button class="btn btn-primary">FreeCodeCamp</button></a>
+    <a href="https://bitbucket.org/dashboard/repositories" target="_blank"><button class="btn btn-primary">BitBucket</button></a>
+  </div>
 </div>
 <footer class="container-fluid">
   <a href="mailto:Ladly@stuff.com" id="send-email">Send an Email</a>
   <p>Made with love by Ladly &copy;</p>
- </footer>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>
