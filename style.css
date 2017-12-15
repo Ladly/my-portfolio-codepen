@@ -1,81 +1,171 @@
-body {
-  margin: 50px;   
-  background-color: blue; 
-  font-family: Lobster;
+.wrapper {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto; 
 }
 
-span {
-  color: red
+nav {
+  background: linear-gradient(-90deg, grey, black);
+  color: black;  
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;  
 }
 
-.nav {
-  padding-right: 50px;
+nav h3 {
+  color: white;
+  padding: 5px;
+  margin: 0
 }
 
-.navbar-brand {
-  padding-left: 370px;
+nav a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  transition: all .4s ease-in-out;
+}
+
+nav ul {
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+nav a:hover {
+  background: black;
+  text-decoration: none;
+  margin: 0;  
+  margin-right: 10px;
+  color: white;
+  border-radius: 5px;
+  transform: scale(1.1);
+  text-align: center;
+}
+
+ul {  
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .about-me {
-  margin-top: 10px;
-  background-color: rgba(121, 141, 173, 0.5);
-  padding: 50px;
-  font-size: 25px;
-}
-
-.technologies {
-  list-style-type: none;
-}
-
-#avatar-pic {
-  width: 250px;
-  border-radius: 50%;
-}
-
-.important {
-  color: rgba(255, 0, 0, 0.5);
-}
-
-.portfolio {
-  height: 500px;
-  background-color: rgba(121, 141, 173, 0.5);
-}
-
-.certs {
-  width: 700px;
-  padding-left: 400px; 
-}
-
-.projects {
-  font-size: 15px;
-}
-
-a:hover {
-  color: black;
-}
-
-footer {
-  background-color: grey;
-}
-
-.contact-me {
-  height: 150px;
-  background-color: rgba(121, 141, 173, 0.5);
+  margin-right: 5px;
+  padding: 5px;
   
 }
 
-#send-email {
-  display: block;
-  padding: 10px 0px 0px 530px
+.about-me p {
+  font-size: 15px;
+  padding: 5px;
+  margin: 5px;
 }
 
-#contact-buttons {
-  padding: 10px 0px 10px 350px;
-}
-footer a {
-  float: right; 
+.about-me li {
+  font-size: 15px;
+  padding: 3px;
+  margin: 3px;
 }
 
-.certificates {
-  background-color: rgba(121, 141, 173, 0.5);
+#avatar {
+  border-radius: 50%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  margin-right: 5px
 }
+
+#about-me {
+  text-align: center;
+  margin: 10px 0px;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  }
+
+#job-description {
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 200px;
+  margin: 10px
+}
+
+#portfolio {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+#projects {
+  margin: 5px;
+}
+
+#projects li {
+  font-size: 15px;
+  padding: 3px;
+  margin: 3px;
+}
+
+#projects a {
+/*   display: block; */ /* I just can't decide :) */
+  color: black;
+}
+
+#contact-me {
+  background: rgba(0, 0, 0, 0.5); 
+  border-radius: 5px 5px 0px 0px;
+}
+
+#contact-buttons li {
+    margin: 5px;
+}
+
+#contact-me ul {
+  margin: 5px;
+  padding: 10px
+}
+
+@media screen and (min-width:760px){
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  nav li {
+    flex: 1 1 0;
+    min-width: 100px;
+  }
+  
+  #about-me {
+  display: flex;
+  text-align: center;
+  border-radius: 5px;
+  }
+  
+  #portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 0;
+  }
+  
+  #contact-buttons {
+    display: flex;
+    flex: 1 1 0;
+  }
+  
+  #contact-me {
+    display: flex;
+    justify-content: space-between;
+  }
+} 
